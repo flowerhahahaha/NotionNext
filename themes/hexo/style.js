@@ -16,7 +16,15 @@ const Style = () => {
       :root {
         --theme-color: ${themeColor};
       }
-
+      
+      /* 文章页隐藏阅读次数 */
+      #article-wrapper .busuanzi_container_page_pv {
+        display: none ！important;
+      }
+      //图片背景颜色变透明
+      #article-header-cover {
+        background-color: transparent;
+      }
       // 底色
       #theme-hexo body {
         background-color: #f5f5f5;
