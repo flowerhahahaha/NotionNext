@@ -141,8 +141,8 @@ const LayoutBase = props => {
                 {children}
               </Transition>
             </div>
-           // {/* 右侧栏 */}
-           //  <SideRight {...props} />
+           {/* 右侧栏 */}
+            //<SideRight {...props} />
             {/* 右侧栏（移动端优先显示） */}
   <SideRight className="order-1 lg:order-2" {...props} />
           </div>
