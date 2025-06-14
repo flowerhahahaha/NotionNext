@@ -121,6 +121,12 @@ const LayoutBase = props => {
                 : '') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
             }>
+            {/* 在这里插入个人简介和最近更新组件 */}
+            <div className='w-full lg:hidden'>
+              <Profile />
+              <RecentUpdates />
+            </div>
+              
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
               <Transition
