@@ -121,7 +121,7 @@ const LayoutBase = props => {
                 ? 'flex-cow-reverse lg:flex-row-reverse'
                 : 'flex-col-reverse lg:flex-row') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
-            }
+            }>
 
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
