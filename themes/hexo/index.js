@@ -109,6 +109,7 @@ const LayoutBase = props => {
           {headerSlot}
         </Transition>
 
+
         {/* 主区块 */}
         <main
           id='wrapper'
@@ -120,13 +121,9 @@ const LayoutBase = props => {
                 ? 'flex-row-reverse'
                 : '') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
-            }>
-            {/* 在这里插入个人简介和最近更新组件 */}
-            <div className='w-full lg:hidden'>
-              <Profile />
-              <RecentUpdates />
-            </div>
-              
+            }
+              {/* 右侧栏 */}
+            <SideRight {...props} />
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
               <Transition
@@ -146,8 +143,7 @@ const LayoutBase = props => {
               </Transition>
             </div>
 
-            {/* 右侧栏 */}
-            <SideRight {...props} />
+            
           </div>
         </main>
 
