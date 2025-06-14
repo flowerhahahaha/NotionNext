@@ -118,7 +118,7 @@ const LayoutBase = props => {
             id='container-inner'
             className={
               (JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE'))
-                ? 'flex-row-reverse lg:flex-row-reverse'
+                ? 'flex-cow-reverse lg:flex-row-reverse'
                 : 'flex-col-reverse lg:flex-row') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
             }
