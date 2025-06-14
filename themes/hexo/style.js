@@ -18,9 +18,9 @@ const Style = () => {
       }
       
       /* 文章页隐藏阅读次数 */
-      #article-wrapper .busuanzi_container_page_pv {
-        display: none ！important;
-      }
+      #article-header-cover > div > section > div.busuanzi_container_page_pv.font-light.mr-2 {
+    display: none;
+}
       //图片背景颜色变透明
       #article-header-cover {
         background-color: transparent;
