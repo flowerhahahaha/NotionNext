@@ -115,8 +115,7 @@ const LayoutBase = props => {
           id='wrapper'
           className={`${siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? '' : 'pt-16'} bg-hexo-background-gray dark:bg-black w-full py-8 md:px-8 lg:px-24 min-h-screen relative`}>
           <div
-             {/* 右侧栏 */}
-            <SideRight {...props} />
+            
 
             id='container-inner'
             className={
@@ -125,7 +124,9 @@ const LayoutBase = props => {
                 : 'flex-col-reverse lg:flex-row') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
             }>
-
+             {/* 右侧栏 */}
+            <SideRight {...props} />
+              
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
               <Transition
