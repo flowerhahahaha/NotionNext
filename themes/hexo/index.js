@@ -115,6 +115,9 @@ const LayoutBase = props => {
           id='wrapper'
           className={`${siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? '' : 'pt-16'} bg-hexo-background-gray dark:bg-black w-full py-8 md:px-8 lg:px-24 min-h-screen relative`}>
           <div
+             {/* 右侧栏 */}
+            <SideRight {...props} />
+
             id='container-inner'
             className={
               (JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE'))
@@ -141,10 +144,7 @@ const LayoutBase = props => {
                 {children}
               </Transition>
             </div>
-           {/* 右侧栏 */}
-            //<SideRight {...props} />
-            {/* 右侧栏（移动端优先显示） */}
-  <SideRight className="order-1 lg:order-2" {...props} />
+          
           </div>
         </main>
 
