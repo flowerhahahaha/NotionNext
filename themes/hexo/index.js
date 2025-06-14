@@ -119,11 +119,10 @@ const LayoutBase = props => {
             className={
               (JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE'))
                 ? 'flex-row-reverse'
-                : '') +
+                : 'flex-col-reverse lg:flex-row') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
             }
-              {/* 右侧栏 */}
-            <SideRight {...props} />
+
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
               <Transition
@@ -138,11 +137,12 @@ const LayoutBase = props => {
                 unmount={false}>
                 {/* 主区上部嵌入 */}
                 {slotTop}
-
+          
                 {children}
               </Transition>
             </div>
-
+           {/* 右侧栏 */}
+            <SideRight {...props} />
             
           </div>
         </main>
