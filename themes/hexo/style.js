@@ -27,7 +27,7 @@ const Style = () => {
       }
       // 底色
       #theme-hexo body {
-        background-color: #f5f5f5;
+        background-color: #73dbfbcf;
       }
       .dark #theme-hexo body {
         background-color: black;
