@@ -6,9 +6,9 @@ import { siteConfig } from '@/lib/config'
 const Footer = ({ title }) => {
   const d = new Date()
   const currentYear = d.getFullYear()
-  const since = siteConfig('SINCE')
+  const startYear =2025
   const copyrightDate =
-    parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
+    startYear < currentYear ? startYear + '-' + currentYear : currentYear.toString
 
   return (
     <footer className='relative z-10 dark:bg-black flex-shrink-0 bg-hexo-light-gray justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm p-6'>
@@ -35,7 +35,7 @@ const Footer = ({ title }) => {
         <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
           {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
         </h1>
-        <PoweredBy className='justify-center' />
+        // <PoweredBy className='justify-center' />
       </span>
       <br />
     </footer>
