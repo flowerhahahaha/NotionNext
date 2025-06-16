@@ -8,7 +8,8 @@ const Footer = ({ title }) => {
   const currentYear = d.getFullYear()
   const startYear =2025
   const copyrightDate =
-    startYear < currentYear ? startYear + '-' + currentYear : currentYear.toString
+    startYear < currentYear ? `${startYear}-${currentYear}` : `${startYear}`
+  {/*startYear < currentYear ? startYear + '-' + currentYear : currentYear.toString() */}
 
   return (
     <footer className='relative z-10 dark:bg-black flex-shrink-0 bg-hexo-light-gray justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm p-6'>
@@ -24,6 +25,7 @@ const Footer = ({ title }) => {
         .<br />
         <BeiAnSite />
         <BeiAnGongAn />
+                           {/*
         <span className='hidden busuanzi_container_site_pv'>
           <i className='fas fa-eye' />
           <span className='px-1 busuanzi_value_site_pv'> </span>
@@ -32,10 +34,11 @@ const Footer = ({ title }) => {
           <i className='fas fa-users' />
           <span className='px-1 busuanzi_value_site_uv'> </span>
         </span>
+        */}
         <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
           {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
         </h1>
-        // <PoweredBy className='justify-center' />
+                   {/* <PoweredBy className='justify-center' /> */}
       </span>
       <br />
     </footer>
