@@ -124,10 +124,10 @@ const LayoutBase = props => {
                 : 'flex-col-reverse lg:flex-row') +
               ' w-full mx-auto lg:flex lg:space-x-4 justify-center relative z-10'
             }>
-             {/* 右侧栏 - 仅大屏显示 */}
-            <div className='hidden lg:block'>
-              <SideRight {...props} />
-            </div>
+             {/* 右侧栏 - 文章页在手机端隐藏，其他页面正常显示 */}
+              <div className={post ? 'hidden lg:block' : ''}>
+                <SideRight {...props} />
+              </div>
               
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
