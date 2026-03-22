@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4942614 */
-  src: url('iconfont.woff2?t=1749266867870') format('woff2'),
-       url('iconfont.woff?t=1749266867870') format('woff'),
-       url('iconfont.ttf?t=1749266867870') format('truetype');
+  src: url('iconfont.woff2?t=1774173408790') format('woff2'),
+       url('iconfont.woff?t=1774173408790') format('woff'),
+       url('iconfont.ttf?t=1774173408790') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,34 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fenxi:before {
+  content: "\e614";
+}
+
+.icon-shuben:before {
+  content: "\e623";
+}
+
+.icon-Notes:before {
+  content: "\e626";
+}
+
+.icon-juecen:before {
+  content: "\e7d0";
+}
+
+.icon-gongjuji:before {
+  content: "\e6b4";
+}
+
+.icon-books:before {
+  content: "\ec94";
+}
+
+.icon-book1:before {
+  content: "\e6e8";
 }
 
 .icon-youxishoubing:before {

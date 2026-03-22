@@ -1,0 +1,86 @@
+{
+  "id": "4942614",
+  "name": "windlotus",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3754591",
+      "name": "分析",
+      "font_class": "fenxi",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5732988",
+      "name": "书本、看书、书籍、书",
+      "font_class": "shuben",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "8451287",
+      "name": "Notes",
+      "font_class": "Notes",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "30252212",
+      "name": "决策方法论",
+      "font_class": "juecen",
+      "unicode": "e7d0",
+      "unicode_decimal": 59344
+    },
+    {
+      "icon_id": "36100629",
+      "name": "工具集",
+      "font_class": "gongjuji",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "12195104",
+      "name": "books",
+      "font_class": "books",
+      "unicode": "ec94",
+      "unicode_decimal": 60564
+    },
+    {
+      "icon_id": "17273461",
+      "name": "书籍",
+      "font_class": "book1",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "2310974",
+      "name": "游戏手柄",
+      "font_class": "youxishoubing",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "5184516",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "5379854",
+      "name": "book",
+      "font_class": "book",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "12195835",
+      "name": "pm",
+      "font_class": "pm",
+      "unicode": "ecea",
+      "unicode_decimal": 60650
+    }
+  ]
+}
