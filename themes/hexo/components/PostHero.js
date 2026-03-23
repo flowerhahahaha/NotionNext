@@ -42,7 +42,7 @@ export default function PostHero({ post, siteInfo }) {
                   href={`/category/${post.category}`}
                   passHref
                   legacyBehavior>
-                  <div className='cursor-pointer px-2 py-1 mb-2 border rounded-sm dark:border-white text-sm font-medium hover:underline duration-200 shadow-text-md text-[#00ff59]/10'>
+                  <div className='cursor-pointer px-2 py-1 mb-2 border rounded-sm dark:border-white text-sm font-medium hover:underline duration-200 shadow-text-md text-[#00ff59]/20'>
                     {post.category}
                   </div>
                 </SmartLink>
@@ -51,7 +51,7 @@ export default function PostHero({ post, siteInfo }) {
           </div>
 
           {/* 文章Title */}
-          <div className='leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-[#00ff59]/10'>
+          <div className='leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-[#00ff59]/20'>
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post.pageIcon} className='text-4xl mx-1' />
             )}
