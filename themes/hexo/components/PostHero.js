@@ -58,8 +58,8 @@ export default function PostHero({ post, siteInfo }) {
             {post.title}
           </div>
 
-         <section className='shadow-text-md flex flex-col text-sm items-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
-  <div className='flex justify-center items-center gap-4 dark:text-gray-200 text-opacity-70'>
+         <section className='w-full shadow-text-md flex flex-col text-sm items-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
+  <div className='w-full flex justify-center items-center gap-4 dark:text-gray-200 text-opacity-70'>
     {post?.type !== 'Page' && (
       <SmartLink
         href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
