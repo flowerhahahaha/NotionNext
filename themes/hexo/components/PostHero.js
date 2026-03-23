@@ -70,9 +70,12 @@ export default function PostHero({ post, siteInfo }) {
                   </SmartLink>
                 </>
               )}
-              <div className='pl-1 mr-2'>
-                {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
-              </div>
+                  <SmartLink
+                    href={`/archive#${formatDateFmt(post?.lastEditedDay, 'yyyy-MM')}`}
+                    passHref
+                    className='pl-1 mr-2 cursor-pointer hover:underline'>
+                    {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
+                  </SmartLink>
             </div>
 
             {JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && (
