@@ -58,33 +58,30 @@ export default function PostHero({ post, siteInfo }) {
             {post.title}
           </div>
 
-          <section className='flex-wrap shadow-text-md flex text-sm justify-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
-            <div className='flex justify-center items-center gap-4 dark:text-gray-200 text-opacity-70'>
-              {post?.type !== 'Page' && (
-                <>
-                  <SmartLink
-                    href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
-                    passHref
-                    className='pl-1 mr-2 cursor-pointer hover:underline'>
-                    {locale.COMMON.POST_TIME}: {post?.publishDay}
-                  </SmartLink>
-                </>
-              )}
-                  <SmartLink
-                    href={`/archive#${formatDateFmt(post?.lastEditedDay, 'yyyy-MM')}`}
-                    passHref
-                    className='pl-1 mr-2 cursor-pointer hover:underline'>
-                    {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
-                  </SmartLink>
-            </div>
-
-            {JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && (
-              <div className='busuanzi_container_page_pv font-light mr-2'>
-                <span className='mr-2 busuanzi_value_page_pv' />
-                {locale.COMMON.VIEWS}
-              </div>
-            )}
-          </section>
+         <section className='shadow-text-md flex flex-col text-sm items-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
+  <div className='flex justify-center items-center gap-4 dark:text-gray-200 text-opacity-70'>
+    {post?.type !== 'Page' && (
+      <SmartLink
+        href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
+        passHref
+        className='pl-1 mr-2 cursor-pointer hover:underline'>
+        {locale.COMMON.POST_TIME}: {post?.publishDay}
+      </SmartLink>
+    )}
+    <SmartLink
+      href={`/archive#${formatDateFmt(post?.lastEditedDay, 'yyyy-MM')}`}
+      passHref
+      className='pl-1 mr-2 cursor-pointer hover:underline'>
+      {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
+    </SmartLink>
+  </div>
+  {JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && (
+    <div className='busuanzi_container_page_pv font-light mr-2'>
+      <span className='mr-2 busuanzi_value_page_pv' />
+      {locale.COMMON.VIEWS}
+    </div>
+  )}
+</section>
 
           <div className='mt-4 mb-1'>
             {post.tagItems && (
