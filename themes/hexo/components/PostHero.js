@@ -42,7 +42,7 @@ export default function PostHero({ post, siteInfo }) {
                   href={`/category/${post.category}`}
                   passHref
                   legacyBehavior>
-                  <div className='cursor-pointer px-2 py-1 mb-2 border rounded-sm dark:border-white text-sm font-medium hover:underline duration-200 shadow-text-md text-[#00ff59]/20'>
+                  <div className='cursor-pointer px-2 py-1 mb-2 border rounded-sm dark:border-white text-sm font-medium hover:underline duration-200 [text-shadow:0_2px_4px_rgba(0,0,0,0.8)] text-white'>
                     {post.category}
                   </div>
                 </SmartLink>
@@ -51,14 +51,14 @@ export default function PostHero({ post, siteInfo }) {
           </div>
 
           {/* 文章Title */}
-          <div className='leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-[#00ff59]/20'>
+          <div className='leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl [text-shadow:0_2px_4px_rgba(0,0,0,0.8)] flex justify-center text-center text-white'>
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post.pageIcon} className='text-4xl mx-1' />
             )}
             {post.title}
           </div>
 
-         <section className='w-full shadow-text-md flex flex-col text-sm items-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
+         <section className='w-full [text-shadow:0_2px_4px_rgba(0,0,0,0.8)] flex flex-col text-sm items-center mt-4 text-white dark:text-gray-400 font-light leading-8'>
   <div className='w-full flex justify-center items-center gap-4 dark:text-gray-200 text-opacity-70'>
     {post?.type !== 'Page' && (
       <SmartLink
