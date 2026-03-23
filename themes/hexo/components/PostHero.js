@@ -70,10 +70,9 @@ export default function PostHero({ post, siteInfo }) {
                   </SmartLink>
                 </>
               )}
-              // 隐藏最后更新时间
-              // <div className='pl-1 mr-2'>
-              //   {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
-              // </div>
+              <div className='pl-1 mr-2'>
+                {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
+              </div>
             </div>
 
             {JSON.parse(siteConfig('ANALYTICS_BUSUANZI_ENABLE')) && (
