@@ -35,10 +35,6 @@ const Footer = ({ title }) => {
         <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
           {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
         </h1>
-        <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
-  测试文字 - 如果你看到这行说明文件生效了
-  {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
-</h1>
         {// <PoweredBy className='justify-center' />}
       </span>
       <br />
